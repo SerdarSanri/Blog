@@ -2,10 +2,11 @@
 
 class Blog_Post_Controller extends Base_Controller {
 
-    public $layout = 'layouts.blog';
+    public $layout = 'layouts.front';
 
     public function __construct()
     {
+        parent::__construct();
         Bundle::start('sparkdown');
     }
 

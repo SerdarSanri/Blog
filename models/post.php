@@ -1,7 +1,7 @@
 <?php
 
-class Post extends Eloquent\Model {
+class Post extends Eloquent {
 
-    public static $timestamps = true;
+    public static $table = 'blog_posts';
 
 }

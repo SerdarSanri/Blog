@@ -1,6 +1,6 @@
 <?php
 
-class Create_Posts_Table {
+class Blog_Create_Posts_Table {
 
 	/**
 	 * Make changes to the database.
@@ -9,7 +9,7 @@ class Create_Posts_Table {
 	 */
 	public function up()
 	{
-		Schema::create('posts', function($table)
+		Schema::create('blog_posts', function($table)
         {
             $table->increments('id');
             $table->date('created_at');
@@ -27,7 +27,7 @@ class Create_Posts_Table {
 	 */
 	public function down()
 	{
-		Schema::drop('posts');
+		Schema::drop('blog_posts');
 	}
 
 }
